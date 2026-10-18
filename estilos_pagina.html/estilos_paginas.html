@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos y Páginas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #a0a0a0; /* Fondo gris de la página */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Estilos para la lista superior */
+        .lista-seccion {
+            margin-bottom: 20px;
+        }
+
+        .lista-seccion h3 {
+            color: #000;
+        }
+
+        .lista-seccion ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .lista-seccion li {
+            margin: 5px 0;
+        }
+
+        .lista-seccion a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        /* Bloque superior anaranjado grande ("Características") */
+        .contenedor-caracteristicas {
+            background-color: goldenrod;
+            border: 5px solid red;
+            margin: 20px 0;
+            padding: 20px;
+        }
+
+        .contenedor-caracteristicas h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            margin-bottom: 10px;
+        }
+
+        .contenedor-caracteristicas p {
+            color: rgb(129, 33, 33);
+        }
+
+        /* Bloque anaranjado delgado del centro */
+        .contenedor {
+            background-color: goldenrod;
+            border: 5px solid red;
+            margin: 20px 0;
+            padding: 15px;
+        }
+
+        .contenedor p {
+            color: rgb(129, 33, 33);
+        }
+
+        /* Contenedor vertical para las tarjetas de "Sobre mí" que ocupan todo el ancho */
+        .contenedor-sobre-mi {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
+
+        /* Tarjetas anchas de "Sobre mí" */
+        .sobre-mi {
+            background-color: lightblue;
+            padding: 15px 20px;
+            border: 4px dashed black;
+            border-radius: 10px;
+            width: 100%; /* Ocupa todo el ancho */
+        }
+
+        .sobre-mi h2 {
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+
+        .sobre-mi p {
+            color: rgb(129, 33, 33);
+            font-family: Times, 'Times New Roman', serif;
+            font-size: 15px;
+        }
+
+        /* Sección de habilidades / botones verde oscuro */
+        .habilidades-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .habilidad {
+            background-color: #008080; /* Color verde/azulado teal */
+            border: 3px dashed black;
+            border-radius: 25px; /* Bordes redondeados píldora */
+            padding: 12px 10px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 16px;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Parte superior: Lista -->
+    <div class="lista-seccion">
+        <h3>Lista</h3>
+        <ul>
+            <li><a href="#">Cuadernos</a></li>
+            <li><a href="#">Lapiceros</a></li>
+            <li><a href="#">Pinceles</a></li>
+            <li><a href="#">Mis páginas web</a></li>
+        </ul>
+    </div>
+
+    <!-- Bloque superior grande: Características -->
+    <div class="contenedor-caracteristicas">
+        <h2>Características</h2>
+        <p>Lorem ipsus</p>
+        <p>Lorem ipsus</p>
+    </div>
+
+    <!-- Bloque anaranjado mediano con texto largo -->
+    <div class="contenedor">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas aspernatur vero cumque officia consequatur sequi distinctio dolor, eaque perspiciatis, libero cupiditate pariatur! Velit sit accusantium exercitationem voluptatibus porro excepturi nobis!</p>
+    </div>
+
+    <!-- Bloque vertical con las tarjetas "Sobre mí" a ancho completo -->
+    <div class="contenedor-sobre-mi">
+        <!-- Tarjeta 3 -->
+        <div class="sobre-mi">
+            <h2>Sobre mi 3</h2>
+            <p>Soy desarrollador frontend</p>
+            <p>Me interesa la ingeniería de software</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="sobre-mi">
+            <h2>Sobre mi 2</h2>
+            <p>Soy desarrollador frontend</p>
+            <p>Me interesa la ingeniería de software</p>
+        </div>
+
+        <!-- Tarjeta 1 -->
+        <div class="sobre-mi">
+            <h2>Sobre mi 1</h2>
+            <p>Soy desarrollador frontend</p>
+            <p>Me interesa la ingeniería de software</p>
+        </div>
+    </div>
+
+    <!-- Grilla de habilidades en 2 filas de 5 columnas -->
+    <div class="habilidades-grid">
+        <!-- Fila 1 -->
+        <div class="habilidad">HTML</div>
+        <div class="habilidad">CSS</div>
+        <div class="habilidad">Javascript</div>
+        <div class="habilidad">Python</div>
+        <div class="habilidad">Java</div>
+
+        <!-- Fila 2 -->
+        <div class="habilidad">SQL</div>
+        <div class="habilidad">Git</div>
+        <div class="habilidad">PHP</div>
+        <div class="habilidad">React</div>
+        <div class="habilidad">NodeJs</div>
+    </div>
+
+</body>
+</html>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
